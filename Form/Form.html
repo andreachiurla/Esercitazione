@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Porsche CHIURLA</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" type="image/x-icon" href="../Porsche/IMG/Porsche.ico">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1 align="center" id="titlePage">
+    Form
+</h1>
+
+<div class="topnav">
+    <a href="../index/index.html">Home Page</a>
+    <a href="../Porsche/Porsche.html">Porsche</a>
+    <a class="active">Form page</a>
+    <a href="../useless/video1.html">Video 1</a>
+    <a href="../useless/video2.html">Video 2</a>
+</div>
+
+<br><br>
+
+<form action="" id="loginForm">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Inserisci nome" onblur="getNome()"> <br><br>
+  
+  <label for="lname">Cognome:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Inserisci cognome" onblur="getCognome()"> <br><br>
+  
+  <label for="codFiscale">Codice Fiscale:</label><br>
+  <input type="text" id="codFiscale" name="codFiscale" placeholder="Inserisci codice fiscale" onblur="getCodiceFiscale()"> <br><br>
+
+  <label for="dateBirth">Data di nascita:</label><br>
+  <input type="text" id="dateBirth" name="dateBirth" placeholder="Inserisci data di nascita" onblur="getDateBirth()"> <br><br>
+  
+  <label for="placeBirth">Luogo di nascita:</label><br>
+  <input type="text" id="placeBirth" name="placeBirth" placeholder="Inserisci luogo di nascita" onblur="getPlaceBirth()"> <br><br>
+  
+  
+  <input type="button" value="Inizia a scorrere" onclick="startScrolling()">
+</form>
+
+
+<marquee behavior="scroll" direction="up" id="mymarquee" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+  <p id="myPara"></p>
+</marquee>
+
+<script src="script.js"></script>
+
+</body>
+</html>
